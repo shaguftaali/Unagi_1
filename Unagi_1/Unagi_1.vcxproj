@@ -115,19 +115,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Includes\Camera\Camera.h" />
+    <ClInclude Include="Includes\EventSystem\InputSystem.h" />
+    <ClInclude Include="Includes\Geometry\Mesh.h" />
+    <ClInclude Include="Includes\Graphics\Material.h" />
+    <ClInclude Include="Includes\Lights\Light.h" />
     <ClInclude Include="Includes\Maths\Math.h" />
     <ClInclude Include="Includes\Maths\Matrix3x3.h" />
     <ClInclude Include="Includes\Maths\Matrix4.h" />
     <ClInclude Include="Includes\Maths\Vector2.h" />
     <ClInclude Include="Includes\Maths\Vector3.h" />
     <ClInclude Include="Includes\Maths\Vector4.h" />
+    <ClInclude Include="Includes\Scene\Scene.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Sources\Camera\Camera.cpp" />
+    <ClCompile Include="Sources\EventSystem\InputSystem.cpp" />
+    <ClCompile Include="Sources\Geometry\Mesh.cpp" />
+    <ClCompile Include="Sources\Graphics\Material.cpp" />
+    <ClCompile Include="Sources\Lights\Light.cpp" />
     <ClCompile Include="Sources\Maths\Matrix3x3.cpp" />
     <ClCompile Include="Sources\Maths\Matrix4.cpp" />
     <ClCompile Include="Sources\Maths\Vector2.cpp" />
     <ClCompile Include="Sources\Maths\Vector3.cpp" />
     <ClCompile Include="Sources\Maths\Vector4.cpp" />
+    <ClCompile Include="Sources\Scene\Scene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader\Texture.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
